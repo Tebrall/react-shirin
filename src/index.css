@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* You can add any global styles below */
+body {
+  @apply bg-white text-gray-700;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
