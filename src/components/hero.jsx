@@ -1,3 +1,4 @@
+// src/components/Hero.jsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -15,10 +16,8 @@ const Hero = () => {
     ];
 
     let currentIndex = 0;
-
     function changeText() {
-      header.innerHTML = ''; // Clear current text
-
+      header.innerHTML = '';
       const spanElements = texts[currentIndex].split(' ').map((word) => {
         const span = document.createElement('span');
         span.textContent = word;
@@ -28,8 +27,6 @@ const Hero = () => {
         span.style.transition = 'all 0.6s ease';
         return span;
       });
-
-      // Animate words in
       spanElements.forEach((span, i) => {
         setTimeout(() => {
           span.style.opacity = '1';
@@ -38,41 +35,35 @@ const Hero = () => {
         header.appendChild(span);
         header.appendChild(document.createTextNode(' '));
       });
-
-      // Loop
       currentIndex = (currentIndex + 1) % texts.length;
       setTimeout(changeText, 4000);
     }
-
     changeText();
   }, []);
 
   return (
-    <header
-      id="home"
-      className="bg-gradient-to-tr from-yellow-100 via-yellow-200 to-yellow-300 py-16"
-    >
+    <header id="home" className="bg-gradient-to-tr from-yellow-100 via-yellow-200 to-yellow-300 py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between">
-        {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-start"
         >
-          <h1 className="animated-header text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-600 leading-tight mb-4 drop-shadow-md" aria-live="polite">
-            {/* Fallback text for screen readers (visually hidden) */}
+          <h1
+            className="animated-header text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-600 leading-tight mb-4 drop-shadow-md"
+            aria-live="polite"
+          >
             <span className="sr-only">Добро пожаловать в мир Shirin!</span>
           </h1>
-
           <p className="text-lg md:text-xl text-gray-700 mb-4">
-            Мы предлагаем широкий ассортимент сладостей и закусок,
-            которые подойдут для всей семьи. Наши продукты создаются из лучших ингредиентов и с соблюдением традиций,
-            чтобы каждый кусочек приносил радость и удовольствие.
+            Мы предлагаем широкий ассортимент сладостей и закусок, которые подойдут для всей семьи. Наши продукты
+            создаются из лучших ингредиентов и с соблюдением традиций, чтобы каждый кусочек приносил радость
+            и удовольствие.
           </p>
           <p className="text-base md:text-lg text-gray-600 mb-8">
-            Присоединяйтесь к тысячам довольных клиентов, которые доверяют качеству Shirin.
-            Узнайте больше о нашем ассортименте и сделайте каждый момент сладким!
+            Присоединяйтесь к тысячам довольных клиентов, которые доверяют качеству Shirin. Узнайте больше
+            о нашем ассортименте и сделайте каждый момент сладким!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -89,8 +80,6 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
-
-        {/* Main Image + Thumbnails */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
