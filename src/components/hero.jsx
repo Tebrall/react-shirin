@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const [mainImage, setMainImage] = useState('/images/hero-page.png');
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const header = document.querySelector('.animated-header');
@@ -44,6 +45,8 @@ const Hero = () => {
   return (
     <header id="home" className="bg-gradient-to-tr from-yellow-100 via-yellow-200 to-yellow-300 py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between">
+
+        {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -56,16 +59,33 @@ const Hero = () => {
           >
             <span className="sr-only">Добро пожаловать в мир Shirin!</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-4">
-            Мы предлагаем широкий ассортимент сладостей и закусок, которые подойдут для всей семьи. Наши продукты
-            создаются из лучших ингредиентов и с соблюдением традиций, чтобы каждый кусочек приносил радость
-            и удовольствие.
-          </p>
-          <p className="text-base md:text-lg text-gray-600 mb-8">
-            Присоединяйтесь к тысячам довольных клиентов, которые доверяют качеству Shirin. Узнайте больше
-            о нашем ассортименте и сделайте каждый момент сладким!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          {/* Collapsible Text Block */}
+          <div
+            className={`transition-all duration-700 overflow-hidden ${expanded ? 'max-h-[1000px]' : 'max-h-28'
+              } md:max-h-full mb-4 text-gray-700`}
+          >
+            <p className="text-lg md:text-xl">
+              Мы предлагаем широкий ассортимент сладостей и закусок, которые подойдут для всей семьи.
+              Наши продукты создаются из лучших ингредиентов и с соблюдением традиций, чтобы каждый кусочек
+              приносил радость и удовольствие.
+            </p>
+            <p className="text-base md:text-lg text-gray-600 mt-3">
+              Присоединяйтесь к миллионам довольных клиентов, которые доверяют качеству Shirin. Узнайте больше
+              о нашем ассортименте и сделайте каждый момент сладким!!
+            </p>
+          </div>
+
+          {/* "Read more" button - only on mobile */}
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="inline-block md:hidden bg-orange-200 text-orange-700 px-3 py-1 rounded-md mb-6 transition-colors"
+          >
+            {expanded ? 'Свернуть' : '...'}
+          </button>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
               href="#products"
               className="bg-orange-500 hover:bg-orange-600 transition-colors text-white font-bold py-2 px-6 rounded-md"
@@ -80,6 +100,8 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
+
+        {/* Image / Thumbnails */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -89,7 +111,6 @@ const Hero = () => {
           <img
             src={mainImage}
             alt="Shirin hero page"
-            id="main-hero-image"
             className="w-4/5 md:w-5/6 max-w-2xl mb-6 transition-transform duration-500 hover:scale-105 drop-shadow-lg float-animation"
           />
           <ul className="flex gap-4">
@@ -97,7 +118,7 @@ const Hero = () => {
               <img
                 src="/images/hero-page.png"
                 alt="Shirin hero page 1"
-                className="w-24 h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
+                className="w-28 h-28 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
                 onClick={() => setMainImage('/images/hero-page.png')}
               />
             </li>
@@ -105,7 +126,7 @@ const Hero = () => {
               <img
                 src="/images/sihirin-hero1.png"
                 alt="Shirin hero page 2"
-                className="w-24 h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
+                className="w-28 h-28 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
                 onClick={() => setMainImage('/images/sihirin-hero1.png')}
               />
             </li>
@@ -113,7 +134,7 @@ const Hero = () => {
               <img
                 src="/images/sihirin-hero2.png"
                 alt="Shirin hero page 3"
-                className="w-24 h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
+                className="w-28 h-28 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-orange-500 transition-all"
                 onClick={() => setMainImage('/images/sihirin-hero2.png')}
               />
             </li>
