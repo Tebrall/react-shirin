@@ -1,7 +1,7 @@
 
 import React from 'react';
-import Navbar from '/Users/user/my-app/src/components/navbar.jsx';
-import Hero from '/Users/user/my-app/src/components/hero.jsx';
+import Navbar from '/Users/user/Documents/GitHub/react-shirin/src/components/navbar.jsx';
+import Hero from '/Users/user/Documents/GitHub/react-shirin/src/components/hero.jsx';
 
 function App() {
   return (
