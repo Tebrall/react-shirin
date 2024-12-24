@@ -24,10 +24,10 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex gap-8 uppercase font-semibold text-white">
           <li>
-            <a href="#home" className="hover:text-orange-400 transition-colors">Домой</a>
+            <a href="/" className="hover:text-orange-400 transition-colors">Домой</a>
           </li>
           <li>
-            <a href="#products" className="hover:text-orange-400 transition-colors">Продукты</a>
+            <a href="/products" className="hover:text-orange-400 transition-colors">Продукты</a> {/* Link to ProductsPage */}
           </li>
           <li>
             <a href="#about" className="hover:text-orange-400 transition-colors">О нас</a>
@@ -85,7 +85,7 @@ const Navbar = () => {
           <ul className="space-y-6 uppercase font-semibold text-white tracking-wide">
             <li>
               <a
-                href="#home"
+                href="/"
                 onClick={() => setNavOpen(false)}
                 className="block py-2 hover:text-orange-300 transition-colors"
               >
@@ -94,12 +94,12 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#products"
+                href="/products"
                 onClick={() => setNavOpen(false)}
                 className="block py-2 hover:text-orange-300 transition-colors"
               >
                 Продукты
-              </a>
+              </a> {/* Link to ProductsPage */}
             </li>
             <li>
               <a
@@ -120,6 +120,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+
           <div ref={langMenuRef} className="relative mt-8">
             <button
               onClick={() => setLangMenuOpen(!langMenuOpen)}
