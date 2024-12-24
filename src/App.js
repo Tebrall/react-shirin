@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import Footer from './components/Footer.jsx';
 
+
 function App() {
   return (
     <Router> {/* Wrap the entire app in Router */}
