@@ -5,7 +5,7 @@ const ProductsPage = () => {
   return (
     <div className="products-page">
 
-      <h2><strong>All Products<span>( 12 )</span></strong></h2>
+      <h2><strong>All Products<span>( 18 )</span></strong></h2>
 
       <div class="cards">
         <figure class="card">
@@ -20,7 +20,7 @@ const ProductsPage = () => {
 
         <figure class="card">
           <img src="/images/product3.JPG" alt="Sweet Corn Deluxe" />
-          <figcaption>Sweet Corn Deluxe</figcaption>
+          <figcaption>Sweet Corn Deluxes</figcaption>
         </figure>
 
         <figure class="card">
@@ -35,6 +35,36 @@ const ProductsPage = () => {
 
         <figure class="card">
           <img src="/images/product6.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product7.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product4.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product5.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product6.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product7.JPG" alt="Sweet Corn Special" />
+          <figcaption>Sweet Corn Special</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="/images/product8.JPG" alt="Sweet Corn Special" />
           <figcaption>Sweet Corn Special</figcaption>
         </figure>
 
