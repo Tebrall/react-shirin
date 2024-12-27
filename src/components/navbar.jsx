@@ -30,10 +30,10 @@ const Navbar = () => {
             <a href="/products" className="hover:text-orange-400 transition-colors">Продукты</a> {/* Link to ProductsPage */}
           </li>
           <li>
-            <a href="#about" className="hover:text-orange-400 transition-colors">О нас</a>
+            <a href="/about" className="hover:text-orange-400 transition-colors">О нас</a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-orange-400 transition-colors">Контакты</a>
+            <a href="/contact" className="hover:text-orange-400 transition-colors">Контакты</a>
           </li>
         </ul>
         <div ref={langMenuRef} className="relative hidden md:block">
@@ -103,7 +103,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="/about"
                 onClick={() => setNavOpen(false)}
                 className="block py-2 hover:text-orange-300 transition-colors"
               >
@@ -112,7 +112,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => setNavOpen(false)}
                 className="block py-2 hover:text-orange-300 transition-colors"
               >

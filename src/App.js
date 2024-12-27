@@ -7,6 +7,7 @@ import ProductsPage from './components/ProductsPage.jsx'; // For the separate Pr
 import AboutUs from './components/AboutUs.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import Footer from './components/Footer.jsx';
+import AboutUsPage from './components/AboutUsPage.jsx';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         {/* Route for Products Page */}
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/about" element={<AboutUsPage />} />
         {/* Default "homepage" components will display when no route matches */}
         <Route
           path="/"
