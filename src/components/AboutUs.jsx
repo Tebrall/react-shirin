@@ -39,7 +39,7 @@ const AboutUs = () => {
             </p>
             <div>
               <a
-                href="#learn-more"
+                href="/about"
                 className="inline-block bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
               >
                 Узнать больше

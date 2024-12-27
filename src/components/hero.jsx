@@ -87,13 +87,13 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
-              href="#products"
+              href="/products"
               className="bg-orange-500 hover:bg-orange-600 transition-colors text-white font-bold py-2 px-6 rounded-md"
             >
               Посмотреть продукты
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-colors font-bold py-2 px-6 rounded-md"
             >
               Связаться с нами

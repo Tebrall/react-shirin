@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="w-full bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 shadow-lg">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between relative">
         <div className="text-white font-extrabold text-xl tracking-widest uppercase">
-          Shirin
+          <a href="/" className="hover:text-orange-400 transition-colors">Shirin</a>
         </div>
         <ul className="hidden md:flex gap-8 uppercase font-semibold text-white">
           <li>
@@ -39,9 +39,9 @@ const Navbar = () => {
         <div ref={langMenuRef} className="relative hidden md:block">
           <button
             onClick={() => setLangMenuOpen(!langMenuOpen)}
-            className="ml-4 focus:outline-none hover:scale-110 transition-transform"
+            className="ml-4 focus:outline-none hover:scale-110 transition-transform flex items-center justify-center"
           >
-            <img src="/language-icon.png" alt="Language" className="w-6 h-6" />
+            <img src="../images/globe.png" alt="Language" className="w-6 h-6" />
           </button>
           {langMenuOpen && (
             <ul className="absolute right-0 mt-2 w-32 bg-white shadow-md rounded-md text-sm z-50">
