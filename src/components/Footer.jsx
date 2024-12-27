@@ -22,22 +22,22 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-3">Быстрые ссылки</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#home" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Домой
               </a>
             </li>
             <li>
-              <a href="#products" className="hover:underline">
+              <a href="/products" className="hover:underline">
                 Продукты
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:underline">
+              <a href="/about" className="hover:underline">
                 О нас
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <a href="/contact" className="hover:underline">
                 Контакты
               </a>
             </li>
