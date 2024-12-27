@@ -52,10 +52,14 @@ const Footer = () => {
               <span className="font-bold">Адрес:</span> ул. Счастливая 42, Ташкент
             </li>
             <li>
-              <span className="font-bold">Тел.:</span> +998 (90) 123-45-67
+              <a href="tel:+998901234567" className="hover:underline">
+                <span className="font-bold">Тел.:</span> +998 (90) 123-45-67
+              </a>
             </li>
             <li>
-              <span className="font-bold">Email:</span> info@shirin.com
+              <a href="mailto:info@shirin.com" className="hover:underline">
+                <span className="font-bold">Email:</span> info@shirin.com
+              </a>
             </li>
           </ul>
         </div>
