@@ -16,11 +16,16 @@ const ProductsPage = () => {
   return (
     <div className="products-page bg-gradient-to-r from-yellow-200 to-yellow-400 pt-8">
       {/* Header */}
-      <h2 className="relative text-center text-orange-600 text-3xl font-bold mb-8">
+      <h2 className="relative text-center text-orange-600 text-3xl font-bold mb-8 animate-fade-in">
         <strong className="px-2 py-2">Все Продукты</strong>
         <span className="text-orange-400 text-sm ml-1">( {products.length} )</span>
         <span className="absolute bottom-[-6px] left-1/4 right-1/4 h-1 bg-gradient-to-r from-red-500 to-orange-400 rounded"></span>
       </h2>
+
+      {/* Additional Text */}
+      <p className="text-center text-gray-700 text-lg mb-6 px-4 animate-slide-up">
+        Мы гордимся тем, что предлагаем широкий ассортимент сладких кукурузных продуктов, которые радуют наших клиентов высоким качеством и незабываемым вкусом.
+      </p>
 
       {/* Product Grid */}
       <div className="cards flex flex-wrap justify-center gap-14 py-4 mb-8">
@@ -59,17 +64,17 @@ const ProductsPage = () => {
             <img
               src="/images/certificate1.jpg"
               alt="ISO Quality Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate2.jpg"
               alt="Safety Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate3.jpg"
               alt="Sustainability Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
           </div>
         </div>

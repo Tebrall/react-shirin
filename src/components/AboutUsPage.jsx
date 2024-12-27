@@ -85,17 +85,17 @@ const AboutUsPage = () => {
             <img
               src="/images/certificate1.jpg"
               alt="ISO Quality Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate2.jpg"
               alt="Safety Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate3.jpg"
               alt="Sustainability Certificate"
-              className="w-1/4 animate-bounce-in"
+              className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
           </div>
         </div>
