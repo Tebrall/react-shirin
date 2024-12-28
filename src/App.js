@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import Footer from './components/Footer.jsx';
 import AboutUsPage from './components/AboutUsPage.jsx';
+import ContactUsPage from './components/ContuctUsPage.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         {/* Route for Products Page */}
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/contact" element={<ContactUsPage />} />
         {/* Default "homepage" components will display when no route matches */}
         <Route
           path="/"
