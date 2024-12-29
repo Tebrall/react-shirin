@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Tebrall.github.io/react-shirin",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "resolve-url-loader": "^5.0.0",
     "sass-loader": "^16.0.4",
