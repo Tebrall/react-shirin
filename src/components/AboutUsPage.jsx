@@ -7,7 +7,7 @@ const AboutUsPage = () => {
   return (
     <div className="about-us-page">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-16">
+      <section className="bg-gradient-to-r from-orange-400 to-orange-400 text-white py-16">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between animate-fade-in">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-4xl font-bold animate-scale-up">О нашей компании</h1>
@@ -28,7 +28,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="bg-gradient-to-bl from-purple-300 via-pink-300 to-pink-500 text-white py-16">
+      <section className="bg-gradient-to-bl from-yellow-300 via-orange-300 to-orange-200 text-white py-16">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="lg:w-1/2 flex justify-center order-2 lg:order-1">
             <img
@@ -48,7 +48,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Approach Section */}
-      <section className="bg-gradient-to-tl from-yellow-500 via-orange-500 to-red-500 text-white py-16">
+      <section className="bg-gradient-to-tl from-orange-400 via-orange-400 to-orange-400 text-white py-16">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h2 className="text-3xl font-bold animate-fade-in">Наш подход к бизнесу</h2>
